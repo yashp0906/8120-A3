@@ -7,5 +7,8 @@ describe('calculateCanvasDiagonal', () => {
   test("Diagonal with large values", () => {
     expect(calculateCanvasDiagonal(3000, 4000)).toBeCloseTo(5000);
   });
+  test("Diagonal with both sides the same", () => {
+    expect(calculateCanvasDiagonal(5, 5)).toBeCloseTo(7.07107, 5);
+  });
 
 });
