@@ -1,9 +1,7 @@
 import paintRequiredCalculator from "./paintRequiredCalculator";
 
 describe("paint required calculator", () => {
-  test("should return expected result", () => {
-    const result = paintRequiredCalculator(50, 10);
-
-    expect(result).toEqual(5);
+  test("calculates paint required for 100 sq ft with 10 sq ft/litre", () => {
+    expect(paintRequiredCalculator(100, 10)).toBe(10);
   });
 });
