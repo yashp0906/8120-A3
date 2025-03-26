@@ -7,5 +7,8 @@ describe('estimatePaintingTime', () => {
   test("estimates time with decimal speed", () => {
     expect(estimatePaintingTime(30, 7.5)).toBe(4);
   });
+  test("large area and speed", () => {
+    expect(estimatePaintingTime(10000, 500)).toBe(20);
+  });
 });
 
