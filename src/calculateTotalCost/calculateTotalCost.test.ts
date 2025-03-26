@@ -7,4 +7,7 @@ describe('calculateTotalCost', () => {
   test("both zero", () => {
     expect(calculateTotalCost(0, 0)).toBe(0);
   });
+  test("decimal costs", () => {
+    expect(calculateTotalCost(99.99, 49.50)).toBeCloseTo(149.49, 2);
+  });
 });
