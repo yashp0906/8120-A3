@@ -7,4 +7,7 @@ describe('convertAreaToSquareFeet', () => {
   test("converts decimal area", () => {
     expect(convertAreaToSquareFeet(2.5)).toBeCloseTo(26.90975, 5);
   });
+  test("converts 0 sq meters", () => {
+    expect(convertAreaToSquareFeet(0)).toBe(0);
+  });
 });
