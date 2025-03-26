@@ -7,4 +7,7 @@ describe('calculatePaintCost', () => {
   test("decimal cost per unit", () => {
     expect(calculatePaintCost(10, 2.5)).toBe(25);
   });
+  test("large area and cost", () => {
+    expect(calculatePaintCost(10000, 3)).toBe(30000);
+  });
 });
