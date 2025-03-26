@@ -7,4 +7,7 @@ describe("paint required calculator", () => {
   test("returns fractional paint required", () => {
     expect(paintRequiredCalculator(30, 8)).toBeCloseTo(3.75, 2);
   });
+  test("large area and coverage", () => {
+    expect(paintRequiredCalculator(10000, 400)).toBe(25);
+  });
 });
